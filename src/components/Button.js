@@ -1,13 +1,14 @@
 import * as React from 'react';
-import theme from "../theme";
 import Button from '@mui/material/Button';
-import { ThemeProvider } from "@mui/material/styles";
-function Btn() {
+
+function Btn(props) {
   return( 
-      <ThemeProvider theme={theme}>
-  <Button variant="contained" color='secondary'>
-  Success
-</Button>
-</ThemeProvider>)
+  <Button variant="contained" color='info' sx={{
+    borderRadius:"13px",
+    fontWeight:"bold",
+    textTransform:"capitalize"
+}} >
+ {props.name}
+</Button>)
 }
 export default Btn;

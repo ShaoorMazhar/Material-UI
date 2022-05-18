@@ -5,30 +5,34 @@ const theme = createTheme({
     primary: {
       main: "#ede7f6",
       dark: "#1A2027",
+      light: "#1A2027", //lighter_black
     },
     secondary: {
       main: "#004d40",
       dark: "#3E5060",
+      light: "#007FFF", //blue
     },
   },
   typography: {
-    
+    h3: {
+      fontWeight: 600,
+      lineHeight: "1.4",
+      fontSize: "2.2rem",
+    },
     h4: {
-       
       fontWeight: 600,
       lineHeight: "1.4",
       marginBottom: "0.35em",
-      fontFamily: 'sans-serif'
-    
+      fontFamily: "sans-serif",
     },
-    h5:{
-        fontWeight: '400',
-      fontSize: '1.25rem',
-      lineHeight: '3',
-      letterSpacing: '0.0075em',
-      color: 'inherit',
+    h5: {
+      fontWeight: 400,
+      fontSize: "1.25rem",
+      lineHeight: "3",
+      letterSpacing: "0.0075em",
+      color: "inherit",
       textAlign: "center",
-      },
+    },
     h6: {
       fontSize: "1.6rem",
       fontWeight: 600,
@@ -38,18 +42,16 @@ const theme = createTheme({
       marginBottom: "0.35em",
       fontFamily: "Arial",
     },
-    // fontFamily: [
-    //   "-apple-system",
-    //   "BlinkMacSystemFont",
-    //   '"Segoe UI"',
-    //   "Roboto",
-    //   '"Helvetica Neue"',
-    //   "Arial",
-    //   "sans-serif",
-    //   '"Apple Color Emoji"',
-    //   '"Segoe UI Emoji"',
-    //   '"Segoe UI Symbol"',
-    // ].join(","),
+    subtitle1: {
+      fontWeight: 250,
+      fontSize: "1.3rem",
+      paddingTop: "10px",
+    },
+    subtitle2: {
+      fontSize: "1.2rem",
+      margin: "-3px",
+      fontWeight: 520,
+    },
   },
 });
 
