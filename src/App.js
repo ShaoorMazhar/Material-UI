@@ -24,7 +24,7 @@ function App() {
             justifyContent: "center",
           }}
         >
-          <Grid container maxWidth={"md"} mt={9}>
+          <Grid container={12} maxWidth={"md"} mt={9}>
             <Grid item xs={2}></Grid>
             <Grid item xs={8}>
               <Box

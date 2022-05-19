@@ -17,41 +17,65 @@ export default function DenseAppBar() {
             justifyContent: "space-between",
           }}
         >
-          <Typography variant="h5" color="#212121">
-            Company Name
-          </Typography>
+          <Grid container sm={5} xs={12}>
+            <Typography variant="h5" color="#212121">
+              Company Name
+            </Typography>{" "}
+          </Grid>
           <Grid
+            container
+            spacing={1}
+            lg={3}
+            md={6}
+            sm={10}
+            xs={12}
             sx={{
-              width: "22%",
+              padding: "2px",
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
             }}
           >
-            <Link
-              href="#"
-              sx={{
-                color: "black",
-                textDecoration: "none",
-                fontWeight: "700",
-                border: "2px solid black",
-              }}
-            >
-              Features
-            </Link>
-            <Link
-              href="#"
-              sx={{ color: "black", textDecoration: "none", fontWeight: "700" }}
-            >
-              Enterprise
-            </Link>
-            <Link
-              href="#"
-              sx={{ color: "black", textDecoration: "none", fontWeight: "700" }}
-            >
-              Support
-            </Link>
-            <PrimaryButton name="Login" />
+            <Grid item sm={3}>
+              <Link
+                href="#"
+                sx={{
+                  color: "black",
+                  textDecoration: "none",
+                  fontWeight: "700",
+                  border: "2px solid black",
+                }}
+              >
+                Features
+              </Link>
+            </Grid>
+            <Grid item sm={3}>
+              <Link
+                href="#"
+                sx={{
+                  color: "black",
+                  textDecoration: "none",
+                  fontWeight: "700",
+                }}
+              >
+                Enterprise
+              </Link>
+            </Grid>
+            <Grid item sm={3} xs={12}>
+              <Link
+                href="#"
+                sx={{
+                  color: "black",
+                  textDecoration: "none",
+                  fontWeight: "700",
+                }}
+              >
+                Support
+              </Link>
+            </Grid>
+            <Grid item md={3} sm={12}>
+              <PrimaryButton name="Login" />{" "}
+            </Grid>
           </Grid>
         </Toolbar>
       </AppBar>

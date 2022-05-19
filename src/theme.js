@@ -43,14 +43,14 @@ const theme = createTheme({
       fontFamily: "Arial",
     },
     subtitle1: {
-      fontWeight: 250,
+      fontWeight: 200,
       fontSize: "1.3rem",
       paddingTop: "10px",
     },
     subtitle2: {
       fontSize: "1.2rem",
       margin: "-3px",
-      fontWeight: 520,
+      fontWeight: 500,
     },
   },
 });
