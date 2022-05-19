@@ -7,18 +7,18 @@ import PrimarySearchAppBar from "./components/Appbar";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import PrimaryButton from "../src/components/PrimaryButton";
-import Divider from "@mui/material/Divider";
 import CustomLink from "./components/Link";
 import StarOutlineIcon from "@mui/icons-material/StarOutline";
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Grid container>
+      <Grid container xs={12}>
         <Grid item xs={12}>
           <PrimarySearchAppBar />
         </Grid>
         <Grid
           container
+          xs={12}
           sx={{
             display: "flex",
             justifyContent: "center",
@@ -346,7 +346,6 @@ function App() {
                 </Box>
               </Grid>
             </Grid>
-            <Divider variant="middle" color="black" />
             <Grid
               container
               sx={{
