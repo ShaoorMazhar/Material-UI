@@ -1,10 +1,9 @@
-import * as React from "react";
+import React from "react";
 import Button from "@mui/material/Button";
-
-function Btn(props) {
+export default function PrimaryButton(props) {
   return (
     <Button
-      variant="contained"
+      variant="outlined"
       color="info"
       sx={{
         borderRadius: "13px",
@@ -16,4 +15,3 @@ function Btn(props) {
     </Button>
   );
 }
-export default Btn;
